@@ -87,8 +87,6 @@ nav a{
 nav a:hover{
     color: #0065FC;
     border-top: var(--border-top) solid #0065FC;
-    padding-top: 14px;
-
 }
 
 /************* Info group **********/
@@ -99,14 +97,14 @@ nav a:hover{
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 35px;
     gap: 35px;
     border: solid green;
 }
 
 .barre-de-recherche{
-    display: flex;
-    width: 377px;
-    height: 49px;
+    display: grid;
+    grid-template-columns: 50px 195px 132px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -115,7 +113,6 @@ label{
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     border: 1px solid #F2F2F2;
-    justify-content: center;
     padding: 15px 18px;
 }
 
@@ -130,6 +127,7 @@ input{
     font-size: 18px;
 }
 
+
 button{
     background-color: #0065FC;
     color: #FFFFFF;
@@ -142,6 +140,7 @@ button{
 
 .filtres{
     display: flex;
+    flex-direction: row;
     align-items: center;
     font-weight: 700;
     gap: 15px;
@@ -155,15 +154,45 @@ button{
 .categories{
     display: flex;
     flex-direction: row;
-    list-style: none;
-    font-size: 17px;
     gap: 15px;
 }
 
-.categories li{
+.categories label{
+    background-color: white;
     border: 2px solid #d9d9d9;
-    gap: 15px; 
+    border-radius: 50px;
+    font-size: 17px;
     padding: 15px 19px;
+    cursor: pointer;
+}
+
+label i{
+    margin-right: 10px;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+}
+
+label:hover{
+    background-color: #DEEBFF;
+}
+
+.places-number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid orange;
+}
+
+.places-number p i{
+    margin-right: 10px;
+}
+
+.places-number i{
+    padding: 4px 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
 }
 
 /****** Hebergements And Populaires ***********/
