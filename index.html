@@ -16,29 +16,34 @@
 
 <body>
     <div class="main-container">
+
+        <!-- Header -->
         <header>
+            <img src="images/logo/Booki.png" alt="Logo Booki" width="61px" height="19px">
             <nav>
-                <img src="images/logo/Booki.png" alt="Logo Booki" width="61px" height="19px">
-                <div>
-                    <a href="">Hébergements</a>
-                    <a href="">Activités</a>
-                </div>
+                <a href="#hebergements">Hébergements</a>
+                <a href="#activities">Activités</a>
             </nav>
         </header>
+
+        <!-- Main -->
         <main>
-            <section class="trouver-hebergement">
-                <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
+            <!-- Info Group -->
+            <section class="search-place">
+                <div>
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
                 <form method="get" action="">
                     <div class="barre-de-recherche">
                         <label for="maRecherche">
                             <i class="fa-solid fa-location-dot"></i>
                         </label>
-                        <input type="search" id="maRecherche" name="q"
-                        placeholder="Où allez-vous ?">
+                        <input type="search" id="maRecherche" name="q" placeholder="Où allez-vous ?">
                         <button>Rechercher</button>
                     </div>
                 </form>
+
                 <div class="filtres">
                     <p>Filtres</p>
                     <ul class="categories">
@@ -48,11 +53,17 @@
                         <li><i class="fa-solid fa-fire"></i>  Nos pépites</li>
                     </ul>
                 </div>
+                <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette villes</p>
             </section>
+
+            <!-- Section group -->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <div class="hebergements-title">
+                        <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
+                    </div>
                 </section>
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -113,7 +124,14 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Section Activités -->
+            <div class="activities">
+                        <h2 id="activities" class="section-title">Activités à Marseilles</h2>
+            </div>
         </main>
+
+        <!-- Footer -->
         <footer></footer>
     </div>
 </body>
