@@ -3,7 +3,6 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 a{
@@ -11,10 +10,18 @@ a{
     text-decoration: none;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
 :root{
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --border-top: 2px;
 }
 
 .fa-solid{
@@ -62,44 +69,101 @@ body{
 }
 
 /****** EN TETE *****/
-
+header img{
+    margin: 30px;
+}
 
 nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    gap: 68px;
+    margin-bottom: 44px;
 }
 
 nav a{
-    margin-left: 68px;
+    border-top: var(--border-top) solid transparent;
+    padding-top: 14px;
 }
 
 nav a:hover{
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 19px;
+    border-top: var(--border-top) solid #0065FC;
+    padding-top: 14px;
+
 }
 
-/************* Barre de recherche **********/
+/************* Info group **********/
+
+.search-place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 35px;
+    border: solid green;
+}
+
+.barre-de-recherche{
+    display: flex;
+    width: 377px;
+    height: 49px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label{
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid #F2F2F2;
+    justify-content: center;
+    padding: 15px 18px;
+}
+
+.fa-location-dot{
+    color: black;
+}
+
+input{
+    border: 1px solid #F2F2F2;
+    padding: 14px 24px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button{
+    background-color: #0065FC;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0065FC;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 .filtres{
     display: flex;
-    font-weight: bold;
+    align-items: center;
+    font-weight: 700;
+    gap: 15px;
+    border: dashed fuchsia;
+}
+
+.filtres p{
+    font-size: 18px;
 }
 
 .categories{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
     list-style: none;
+    font-size: 17px;
+    gap: 15px;
 }
 
 .categories li{
     border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    padding: 4px 19px;
+    gap: 15px; 
+    padding: 15px 19px;
 }
 
 /****** Hebergements And Populaires ***********/
