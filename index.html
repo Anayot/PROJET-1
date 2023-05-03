@@ -45,24 +45,24 @@
 
                 <div class="filtres">
                     <p>Filtres</p>
-                    <div class="categories">
+                    <form class="categories">
+                        <input type="checkbox" id="economique" name="type" class="selected">
                         <label for="economique">
-                            <input type="checkbox" id="economique" name="type" class="selected">
                             <i class="fa-solid fa-money-bill-wave"></i> Economique
                         </label>
+                        <input type="checkbox" id="familial" name="type" class="selected">
                         <label for="familial">
-                            <input type="checkbox" id="familiale" name="type" class="selected">
                             <i class="fa-solid fa-person"></i> Familial
                         </label>
+                        <input type="checkbox" id="romantique" name="type" class="selected">
                         <label for="romantique">
-                            <input type="checkbox" id="romantique" name="type" class="selected">
                             <i class="fa-solid fa-heart"></i> Romantique
                         </label>
+                        <input type="checkbox" id="pepites" name="type" class="selected">
                         <label for="pepites">
-                            <input type="checkbox" id="pepite" name="type" class="selected">
                             <i class="fa-solid fa-fire"></i> Nos pépites
                         </label>
-                    </div>
+                    </form>
                 </div>
                 <div class="places-number">
                     <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette villes</p>
@@ -76,7 +76,7 @@
                         <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-find">
-                        <article class="card">
+                        <a href="" class="card">
                             <img src="./images/hebergements/fred-kleber.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -92,8 +92,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a>
+                        <a href="" class="card">
                             <img src="./images/hebergements/febrian-zakaria.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -109,8 +109,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a>
+                        <a href="" class="card">
                             <img src="./images/hebergements/reisetopia.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -126,8 +126,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a>
+                        <a href="" class="card">
                             <img src="./images/hebergements/annie-spratt.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -143,8 +143,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a>
+                        <a href="" class="card">
                             <img src="./images/hebergements/marcus-loke.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -160,8 +160,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a href="">
+                        <a href="" class="card">
                             <img src="./images/hebergements/nicate-lee.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -177,7 +177,7 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
                     </div>
                     <div class="affichage">
                         <p>Affichez plus</p>
@@ -190,7 +190,7 @@
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
-                        <article class="card">
+                        <a href="" class="card">
                             <img src="./images/hebergements/emile-guillemot.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -206,8 +206,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a>
+                        <a href="" class="card">
                             <img src="./images/hebergements/aw-creative.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -223,8 +223,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
-                        <article class="card">
+                        </a>
+                        <a href="" class="card">
                             <img src="./images/hebergements/febrian-zakaria2.jpeg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -240,7 +240,7 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
+                        </a>
                     </div>
                 </section>
             </div>
@@ -251,36 +251,59 @@
                     <h2 id="activities" class="section-title">Activités à Marseilles</h2>
                 </div>
                 <div class="activities-offer">
-                    <article class="place-to-be">
+                    <a href="" class="place-to-be">
                         <img src="./images/activities/reno-laithienne.jpeg" alt="Image d'un port">
                         <div class="place-to-be-title">
                             <p>Vieux-port</p>
                         </div>
-                    </article>
-                    <article class="place-to-be">
+                    </a>
+                    <a href="" class="place-to-be">
                         <img src="./images/activities/paul-hermann.jpeg" alt="Image du fort">
                         <div class="place-to-be-title">
                             <p>Fort de Pomègues</p>
                         </div>
-                    </article>
-                    <article class="place-to-be">
+                    </a>
+                    <a href="" class="place-to-be">
                         <img src="./images/activities/kilyan-sockalingum.jpeg" alt="Image de paysage">
                         <div class="place-to-be-title">
                             <p>Parc national des Calanques</p>
                         </div>
-                    </article>
-                    <article class="place-to-be">
+                    </a>
+                    <a href="" class="place-to-be">
                         <img src="./images/activities/florian-wehde.jpeg" alt="Image d'une ville">
                         <div class="place-to-be-title">
                             <p>Notre-Dame-de-la-Garde</p>
                         </div>
-                    </article>
+                    </a>
                 </div>
             </div>
         </main>
 
         <!-- Footer -->
-        <footer></footer>
+        <footer>
+            <div class="pied-de-page">
+                <p>A propos</p>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </div>
+            <div class="pied-de-page">
+                <p>Nos hébergements</p>
+                <ul>
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
+            </div>
+            <div class="pied-de-page">
+                <p>Assistance</p>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
