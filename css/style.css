@@ -176,7 +176,8 @@ body{
     .filtres{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
     }
 
     .categories{
@@ -593,8 +594,8 @@ footer{
 
         .filtres{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            align-items: center;
         }
 
         .categories{
@@ -610,10 +611,9 @@ footer{
 
         .places-number{
             display: flex;
-            flex-direction: row;
             align-items: center;
-            width: 100%;
-            height: 100%;
+            justify-content: flex-start;
+            border: solid orange; /*impossible de les aligner sur la même ligne*/
         }
 
         .places-number p{
@@ -642,6 +642,9 @@ footer{
             gap: 15px;
             height: 100%;
             width: 100%;
+        }
+        .hebergements{
+            border: solid green; /* impossible de changer le background color en blanc*/
         }
 
         .populaires-cards,
@@ -685,7 +688,7 @@ footer{
             height: 200px;
         }
 
-        .place-to-be img{
+        .place-to-be img{ /*problème d'affichage des images*/
             height: 70%;
             object-fit: cover;
         }
@@ -696,7 +699,6 @@ footer{
             height: 100%;
             gap: 50px;
             padding: 30px;
-            border: solid red;
         }
 
         .pied-de-page{
