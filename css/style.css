@@ -530,6 +530,10 @@ footer{
             grid-auto-columns: 297px;
             gap: 30px;
         }
+
+        .card-title{
+            font-size: clamp(14px, 15px, 16px);
+        }
     }
 
     /* #endregion Between Tablet & Mobile (max 869px min 768px */
